@@ -8,17 +8,17 @@ const routes: Routes = [
   // { path: '', pathMatch: 'full', component: EmptyRouteComponent },
   // { path: '**', redirectTo: '' },
   { path: '**', component: EmptyRouteComponent },
-  {path: 'about/', component: AboutComponent}
+  {path: 'app1/about/', component: AboutComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  // providers: [
-  //   { provide: APP_BASE_HREF, useValue: '/' }
-  // ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/' + (window.location.pathname.split('/')[1] || '') }
+    { provide: APP_BASE_HREF, useValue: '/' }
   ],
+  // providers: [
+  //   { provide: APP_BASE_HREF, useValue: '/' + (window.location.pathname.split('/')[1] || '') }
+  // ],
 })
 export class AppRoutingModule { }
