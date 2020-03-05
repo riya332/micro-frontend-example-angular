@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { EmptyRouteComponent } from './empty-route.component';
 import { AppService } from './app.service';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmptyRouteComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
