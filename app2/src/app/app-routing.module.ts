@@ -7,13 +7,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  //  { path: '**', component: EmptyRouteComponent },
-  // {
-  //   path: 'app2', component: AppComponent
-  // },
-  {
-    path: 'app2', redirectTo: 'app2/about',
-  },
   { path: 'app2/about', component: AboutComponent },
   { path: 'app2/contact', component: ContactComponent },
   { path: '', redirectTo: 'app2/about', pathMatch: 'full' },
